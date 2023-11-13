@@ -1,7 +1,7 @@
-# KL Homebrew Tap
+# Kepler16 Homebrew Tap
 
-Install with
+### [KL](https://github.com/kepler16/kl)
 
 ```bash
-brew install kepler16/kl
+brew install kepler16/tap/kl
 ```
