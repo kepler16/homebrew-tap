@@ -1,7 +1,7 @@
 class Kl < Formula
   desc "Container orchestration and networking for micro-service development"
   homepage "https://github.com/kepler16/kl"
-  license "GPLv3"
+  license "GPL-3.0"
   version "2.5.2"
 
   on_macos do
@@ -23,6 +23,6 @@ class Kl < Formula
   end
 
   def install
-    bin.install "bin/kl"
+    bin.install "kl"
   end
 end
