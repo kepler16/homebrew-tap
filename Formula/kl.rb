@@ -1,24 +1,28 @@
 class Kl < Formula
   desc "Container orchestration and networking for micro-service development"
   homepage "https://github.com/kepler16/kl"
-  license "GPL-3.0"
-  version "2.8.2"
+  license "MIT"
+  version "2.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kepler16/kl/releases/download/v2.8.2/kl-macos-amd64.tar.gz"
-      sha256 "166b937e99d82f5c9c70b2abfc5efefe7fdc65f3e663fff0ddc515bc7d7494b5"
+      url "https://github.com/kepler16/kl/releases/download/v2.9.0/kl-macos-amd64.tar.gz"
+      sha256 "06062fb5f3362494ea7e86a83b17d911f45a64d2da2d12a04f5af803ac81561a"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kepler16/kl/releases/download/v2.8.2/kl-macos-arm64.tar.gz"
-      sha256 "ef6403455d6b0f9321c48c0833458ef0640ebb5200a70984f0b74e6cfa8b9328"
+      url "https://github.com/kepler16/kl/releases/download/v2.9.0/kl-macos-arm64.tar.gz"
+      sha256 "c5e5a4948ffc1cf683d7dd866a64ac17178b01b03aba65a8d7b1945924bd3083"
     end
   end
 
   on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/kepler16/kl/releases/download/v2.9.0/kl-macos-amd64.tar.gz"
+      sha256 "5477d27b1f3b872064b2fb300c4b10fe73b7fff02e660a9b7c91c02b25ee7c98"
+    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kepler16/kl/releases/download/v2.8.2/kl-linux-amd64.tar.gz"
-      sha256 "64bf46bd0b1802ad9d6764fbe3a98b8139ac5db7c422280acf2bc8e2eba7dc9a"
+      url "https://github.com/kepler16/kl/releases/download/v2.9.0/kl-linux-arm64.tar.gz"
+      sha256 "14d4dde66a97691384e237876cf0fc63ed3e059886eb605ce6d53c6d94e73270"
     end
   end
 
