@@ -5,3 +5,9 @@
 ```bash
 brew install kepler16/tap/kl
 ```
+
+### [KMONO](https://github.com/kepler16/kmono)
+
+```bash
+brew install kepler16/tap/kmono
+```

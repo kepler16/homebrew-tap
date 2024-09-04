@@ -17,7 +17,7 @@ class Kl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kepler16/kl/releases/download/v2.10.0/kl-macos-amd64.tar.gz"
+      url "https://github.com/kepler16/kl/releases/download/v2.10.0/kl-linux-amd64.tar.gz"
       sha256 "82ba4be334bebbae22a6972347e70080ac685d8bd0585064d606bdc88f76516f"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
