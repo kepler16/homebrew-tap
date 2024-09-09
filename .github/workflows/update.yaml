@@ -22,11 +22,11 @@ jobs:
       run: |
         message=$(scripts/compile.bb kepler16 kmono)
         git add .
-        git commit -m "${message}"
+        git commit -m "${message}" || true
 
         message=$(scripts/compile.bb kepler16 kl)
         git add .
-        git commit -m "${message}"
+        git commit -m "${message}" || true
 
     - name: Release
       run: |

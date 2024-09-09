@@ -91,7 +91,7 @@
                        :template repo
                        :version version
                        :checksums checksums})
-    (println (str "Updat " repo " to " version))))
+    (println (str "Update " repo " to " version))))
 
 (main (first *command-line-args*)
       (second *command-line-args*))
