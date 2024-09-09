@@ -1,0 +1,28 @@
+name: Update
+on: [workflow_dispatch]
+
+jobs:
+  update-kmono:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout git repo
+      uses: actions/checkout@v4
+
+    - uses: DeLaGuardo/setup-clojure@9.5
+      with:
+        bb: latest
+
+    - name: Compile KL
+      run: |
+        message=$(scripts/compile.bb kepler16 kmono)
+        git add .
+        git commit -m "${message}"
+
+        message=$(scripts/compile.bb kepler16 kl)
+        git add .
+        git commit -m "${message}"
+
+    - name: Release
+      run: |
+        git push
