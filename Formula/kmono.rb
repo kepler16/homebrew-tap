@@ -2,27 +2,27 @@ class Kmono < Formula
   desc "Clojure monorepo tool"
   homepage "https://github.com/kepler16/kmono"
   license "MIT"
-  version "4.7.2"
+  version "4.7.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kepler16/kmono/releases/download/v4.7.2/kmono-macos-amd64.tar.gz"
-      sha256 "b983b5eb67b1d4cc58a10bc9eddb6e6aee6f814bdc242b8ee58c469d75dea30f"
+      url "https://github.com/kepler16/kmono/releases/download/v4.7.3/kmono-macos-amd64.tar.gz"
+      sha256 "1e47b21d49600bc412cbff19f066736cc1b7e8acc0d63f3ef0f346cb56d5b665"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kepler16/kmono/releases/download/v4.7.2/kmono-macos-arm64.tar.gz"
-      sha256 "42396dd86b9fd4c2c38308d5e597e37aec972ca12dfc4f806536adc0ab51f2bf"
+      url "https://github.com/kepler16/kmono/releases/download/v4.7.3/kmono-macos-arm64.tar.gz"
+      sha256 "4995a5b21b227a06831aa2d6380277195838436289fe8f048cb30aa3c88a7477"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kepler16/kmono/releases/download/v4.7.2/kmono-linux-amd64.tar.gz"
-      sha256 "e719d7b2e4c561356bf29d3b16d1b5ed2487063651863a664d44b8dd4d46b60d"
+      url "https://github.com/kepler16/kmono/releases/download/v4.7.3/kmono-linux-amd64.tar.gz"
+      sha256 "ab44e59a0ddf8d38d267d93ff3a6d70a202803f0e25ee4003f6d6da74201fb08"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kepler16/kmono/releases/download/v4.7.2/kmono-linux-arm64.tar.gz"
-      sha256 "913f8fac5d81a314a5e6a52de5ffb7c7502207eb6defa41e454570ad565326a5"
+      url "https://github.com/kepler16/kmono/releases/download/v4.7.3/kmono-linux-arm64.tar.gz"
+      sha256 "24a3c7f130d2c41b24d406b34bd6ec3485924d7439d26c661ef9e0f04baebca4"
     end
   end
 
